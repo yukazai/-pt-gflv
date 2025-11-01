@@ -1,47 +1,45 @@
 // custom_emoji_plugin
-// VRCX plugin to add custom emojis (VRChat Plus) with custom sizes
+// VRCX plugin to add custom emojis controlled via the settings icon
 class CustomEmojiPlugin extends CustomModule {
     constructor() {
         super({
             name: "custom_emoji_plugin",
-            description: "Allows VRChat Plus users to add custom emojis even above the usual size limit",
+            description: "Allows VRChat Plus users to add custom emojis via the settings icon",
             authors: [{ name: "usernamethatrun", userId: "usr_xxxxxxxx" }],
             tags: ["VRChatPlus", "Emoji", "Customization"],
         });
 
         this.loaded = false;
-        this.customEmojis = {}; // Store your custom emojis here
+        this.customEmojis = {}; // Store your custom emojis
     }
 
     async load() {
         this.loaded = true;
         this.logger.log("[CustomEmoji] Plugin loaded");
 
-        this.addSidebarButton();
+        this.addSettingsControl();
         this.overrideEmojiRenderer();
     }
 
-    addSidebarButton() {
-        // Simple sidebar integration
-        const sidebar = document.querySelector("#sidebar");
-        if (!sidebar) return setTimeout(() => this.addSidebarButton(), 1000);
+    addSettingsControl() {
+        // Wait until the reload button exists
+        const checkInterval = setInterval(() => {
+            const reloadBtn = document.querySelector("#reload-plugins-button");
+            if (reloadBtn) {
+                clearInterval(checkInterval);
+                const settingsIcon = document.createElement("button");
+                settingsIcon.id = "custom-emoji-settings-btn";
+                settingsIcon.innerText = "⚙️ Custom Emojis";
+                settingsIcon.style = `
+                    margin-left: 10px;
+                    background: #555; color: #fff; border: none; padding: 4px 8px;
+                    cursor: pointer; border-radius: 4px; font-weight: bold;
+                `;
+                settingsIcon.onclick = () => this.openEmojiManager();
 
-        if (document.getElementById("custom-emoji-sidebar-btn")) return;
-
-        const btn = document.createElement("div");
-        btn.id = "custom-emoji-sidebar-btn";
-        btn.innerText = "Custom Emojis";
-        btn.style = `
-            padding: 10px 15px;
-            cursor: pointer;
-            color: #eee;
-            font-weight: bold;
-        `;
-        btn.onmouseover = () => btn.style.background = "#333";
-        btn.onmouseout = () => btn.style.background = "transparent";
-        btn.onclick = () => this.openEmojiManager();
-
-        sidebar.appendChild(btn);
+                reloadBtn.parentElement.appendChild(settingsIcon);
+            }
+        }, 500);
     }
 
     openEmojiManager() {
@@ -59,6 +57,7 @@ class CustomEmojiPlugin extends CustomModule {
 
         const title = document.createElement("h2");
         title.innerText = "Custom Emojis";
+
         const closeBtn = document.createElement("button");
         closeBtn.innerText = "Close";
         closeBtn.style = `
@@ -75,12 +74,11 @@ class CustomEmojiPlugin extends CustomModule {
         fileInput.style = "margin: 10px 0;";
         fileInput.onchange = (e) => this.addCustomEmoji(e);
 
-        // Emoji list
+        // Emoji list container
         const emojiList = document.createElement("div");
         emojiList.id = "custom-emoji-list";
         emojiList.style = "margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;";
 
-        // Render existing emojis
         this.renderEmojiList(emojiList);
 
         modal.appendChild(title);
@@ -126,7 +124,6 @@ class CustomEmojiPlugin extends CustomModule {
     }
 
     overrideEmojiRenderer() {
-        // Monkey-patch VRCX emoji renderer to include custom emojis
         const originalRender = window.VRCX?.renderEmoji;
         if (!originalRender) return this.logger.warn("[CustomEmoji] renderEmoji not found");
 
