@@ -1,36 +1,56 @@
 // plugin_manager
-// VRCX plugin manager sidebar
+// VRCX plugin manager integrated into the sidebar
 class PluginManagerPlugin extends CustomModule {
     constructor() {
         super({
             name: "plugin_manager",
-            description: "Adds a sidebar to manage and customize all installed plugins",
+            description: "Adds a sidebar option to manage all installed plugins",
             authors: [{ name: "usernamethatrun", userId: "usr_xxxxxxxx" }],
             tags: ["Utility", "Manager"],
         });
 
         this.loaded = false;
+        this.sidebarItemId = "plugin-manager-sidebar-item";
     }
 
     async load() {
         this.loaded = true;
         this.logger.log("[PluginManager] loaded");
-        this.addSidebarOption();
+
+        this.addSidebarItem();
     }
 
-    addSidebarOption() {
-        if (!window.VRCX?.addSidebarItem) {
-            this.logger.warn("[PluginManager] Cannot add sidebar item: addSidebarItem not found");
+    addSidebarItem() {
+        // Check if sidebar exists
+        const sidebar = document.querySelector("#sidebar");
+        if (!sidebar) {
+            this.logger.warn("[PluginManager] Sidebar not found, retrying in 1s...");
+            setTimeout(() => this.addSidebarItem(), 1000);
             return;
         }
 
-        window.VRCX.addSidebarItem("Plugin Manager", () => {
-            this.openManagerUI();
-        });
+        // Avoid adding multiple times
+        if (document.getElementById(this.sidebarItemId)) return;
+
+        const item = document.createElement("div");
+        item.id = this.sidebarItemId;
+        item.innerText = "Plugin Manager";
+        item.style = `
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #eee;
+            font-weight: bold;
+            user-select: none;
+        `;
+        item.onmouseover = () => item.style.background = "#333";
+        item.onmouseout = () => item.style.background = "transparent";
+        item.onclick = () => this.openManagerUI();
+
+        sidebar.appendChild(item);
     }
 
     openManagerUI() {
-        // Remove existing modal if open
+        // Remove existing modal
         const existing = document.getElementById("plugin-manager-modal");
         if (existing) existing.remove();
 
@@ -113,7 +133,6 @@ class PluginManagerPlugin extends CustomModule {
         modal.appendChild(title);
         modal.appendChild(closeBtn);
         modal.appendChild(pluginList);
-
         document.body.appendChild(modal);
     }
 }
