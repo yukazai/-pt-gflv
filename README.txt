@@ -1,0 +1,1 @@
+Unzip this file and upload 'dist/' and 'repo.json' to your GitHub repository.

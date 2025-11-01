@@ -1,0 +1,915 @@
+{
+  "name": "VRCX Plugin Repository",
+  "description": "Yukazai custom experimental plugins",
+  "authors": [
+    {
+      "name": "usernamethatrun",
+      "userId": "usr_xxxxxxxx",
+      "description": "--_-"
+    }
+  ],
+  "build": "1",
+  "url": "https://github.com/yukazai/myVRCXplugins",
+  "modules": [
+    {
+      "id": "plugin_1",
+      "name": "plugin_1",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_1.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_1.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_2",
+      "name": "plugin_2",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_2.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_2.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_3",
+      "name": "plugin_3",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_3.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_3.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_4",
+      "name": "plugin_4",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_4.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_4.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_5",
+      "name": "plugin_5",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_5.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_5.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_6",
+      "name": "plugin_6",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_6.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_6.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_7",
+      "name": "plugin_7",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_7.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_7.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_8",
+      "name": "plugin_8",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_8.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_8.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_9",
+      "name": "plugin_9",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_9.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_9.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_10",
+      "name": "plugin_10",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_10.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_10.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_11",
+      "name": "plugin_11",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_11.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_11.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_12",
+      "name": "plugin_12",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_12.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_12.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_13",
+      "name": "plugin_13",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_13.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_13.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_14",
+      "name": "plugin_14",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_14.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_14.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_15",
+      "name": "plugin_15",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_15.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_15.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_16",
+      "name": "plugin_16",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_16.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_16.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_17",
+      "name": "plugin_17",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_17.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_17.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_18",
+      "name": "plugin_18",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_18.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_18.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_19",
+      "name": "plugin_19",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_19.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_19.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_20",
+      "name": "plugin_20",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_20.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_20.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_21",
+      "name": "plugin_21",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_21.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_21.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_22",
+      "name": "plugin_22",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_22.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_22.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_23",
+      "name": "plugin_23",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_23.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_23.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_24",
+      "name": "plugin_24",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_24.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_24.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_25",
+      "name": "plugin_25",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_25.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_25.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_26",
+      "name": "plugin_26",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_26.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_26.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_27",
+      "name": "plugin_27",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_27.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_27.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_28",
+      "name": "plugin_28",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_28.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_28.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_29",
+      "name": "plugin_29",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_29.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_29.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_30",
+      "name": "plugin_30",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_30.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_30.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_31",
+      "name": "plugin_31",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_31.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_31.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_32",
+      "name": "plugin_32",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_32.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_32.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_33",
+      "name": "plugin_33",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_33.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_33.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_34",
+      "name": "plugin_34",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_34.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_34.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_35",
+      "name": "plugin_35",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_35.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_35.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_36",
+      "name": "plugin_36",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_36.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_36.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_37",
+      "name": "plugin_37",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_37.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_37.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_38",
+      "name": "plugin_38",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_38.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_38.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_39",
+      "name": "plugin_39",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_39.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_39.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_40",
+      "name": "plugin_40",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_40.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_40.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_41",
+      "name": "plugin_41",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_41.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_41.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_42",
+      "name": "plugin_42",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_42.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_42.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_43",
+      "name": "plugin_43",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_43.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_43.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_44",
+      "name": "plugin_44",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_44.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_44.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_45",
+      "name": "plugin_45",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_45.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_45.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_46",
+      "name": "plugin_46",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_46.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_46.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_47",
+      "name": "plugin_47",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_47.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_47.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_48",
+      "name": "plugin_48",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_48.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_48.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_49",
+      "name": "plugin_49",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_49.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_49.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "plugin_50",
+      "name": "plugin_50",
+      "description": "Experimental Quest-compatible plugin",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx"
+        }
+      ],
+      "build": "1",
+      "url": "https://github.com/yukazai/myVRCXplugins/raw/main/dist/plugin_50.js",
+      "sourceUrl": "https://github.com/yukazai/myVRCXplugins/raw/main/src/plugin_50.ts",
+      "tags": [
+        "Experimental"
+      ],
+      "enabled": true
+    }
+  ]
+}
