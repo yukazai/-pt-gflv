@@ -1,10 +1,9 @@
 // custom_emoji_plugin
-// VRCX plugin to add custom emojis controlled via the settings icon
 class CustomEmojiPlugin extends CustomModule {
     constructor() {
         super({
             name: "custom_emoji_plugin",
-            description: "Allows VRChat Plus users to add custom emojis via the settings icon",
+            description: "Add your own emojis (VRChat Plus) via plugin settings",
             authors: [{ name: "usernamethatrun", userId: "usr_xxxxxxxx" }],
             tags: ["VRChatPlus", "Emoji", "Customization"],
         });
@@ -16,80 +15,35 @@ class CustomEmojiPlugin extends CustomModule {
     async load() {
         this.loaded = true;
         this.logger.log("[CustomEmoji] Plugin loaded");
-
-        this.addSettingsControl();
         this.overrideEmojiRenderer();
     }
 
-    addSettingsControl() {
-        // Wait until the reload button exists
-        const checkInterval = setInterval(() => {
-            const reloadBtn = document.querySelector("#reload-plugins-button");
-            if (reloadBtn) {
-                clearInterval(checkInterval);
-                const settingsIcon = document.createElement("button");
-                settingsIcon.id = "custom-emoji-settings-btn";
-                settingsIcon.innerText = "⚙️ Custom Emojis";
-                settingsIcon.style = `
-                    margin-left: 10px;
-                    background: #555; color: #fff; border: none; padding: 4px 8px;
-                    cursor: pointer; border-radius: 4px; font-weight: bold;
-                `;
-                settingsIcon.onclick = () => this.openEmojiManager();
+    // VRCX calls this automatically to display the settings gear
+    getSettings() {
+        const container = document.createElement("div");
+        container.style = "display: flex; flex-direction: column; gap: 10px;";
 
-                reloadBtn.parentElement.appendChild(settingsIcon);
-            }
-        }, 500);
-    }
-
-    openEmojiManager() {
-        // Remove existing modal
-        const existing = document.getElementById("custom-emoji-modal");
-        if (existing) existing.remove();
-
-        const modal = document.createElement("div");
-        modal.id = "custom-emoji-modal";
-        modal.style = `
-            position: fixed; top: 5%; left: 5%; width: 90%; height: 90%;
-            background: #1c1c1c; color: #eee; overflow-y: auto;
-            border: 2px solid #555; border-radius: 10px; padding: 20px; z-index: 99999;
-        `;
-
-        const title = document.createElement("h2");
+        const title = document.createElement("h3");
         title.innerText = "Custom Emojis";
+        container.appendChild(title);
 
-        const closeBtn = document.createElement("button");
-        closeBtn.innerText = "Close";
-        closeBtn.style = `
-            position: absolute; top: 10px; right: 10px;
-            background: #444; color: #fff; border: none; padding: 5px 10px;
-            cursor: pointer; border-radius: 5px;
-        `;
-        closeBtn.onclick = () => modal.remove();
-
-        // File input to add emoji
         const fileInput = document.createElement("input");
         fileInput.type = "file";
         fileInput.accept = "image/*";
-        fileInput.style = "margin: 10px 0;";
-        fileInput.onchange = (e) => this.addCustomEmoji(e);
+        fileInput.onchange = (e) => this.addCustomEmoji(e, container);
+        container.appendChild(fileInput);
 
-        // Emoji list container
         const emojiList = document.createElement("div");
-        emojiList.id = "custom-emoji-list";
-        emojiList.style = "margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;";
+        emojiList.style = "display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;";
+        container.appendChild(emojiList);
 
+        // Render existing emojis
         this.renderEmojiList(emojiList);
 
-        modal.appendChild(title);
-        modal.appendChild(closeBtn);
-        modal.appendChild(fileInput);
-        modal.appendChild(emojiList);
-
-        document.body.appendChild(modal);
+        return container;
     }
 
-    addCustomEmoji(event) {
+    addCustomEmoji(event, container) {
         const file = event.target.files[0];
         if (!file) return;
 
@@ -98,8 +52,8 @@ class CustomEmojiPlugin extends CustomModule {
             const emojiName = file.name.split(".")[0];
             this.customEmojis[emojiName] = e.target.result;
 
-            const list = document.getElementById("custom-emoji-list");
-            if (list) this.renderEmojiList(list);
+            const emojiList = container.querySelector("div:last-child");
+            if (emojiList) this.renderEmojiList(emojiList);
         };
         reader.readAsDataURL(file);
     }
