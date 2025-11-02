@@ -88,6 +88,24 @@
       "enabled": true
     },
     {
+  "name": "Among Us Tracker Repo",
+  "description": "VRCX plugin repo containing Among Us Tracker plugin",
+  "authors": [
+    {"name": "usernamethatrun", "userId": "usr_xxxxxxxx", "description": "Plugin author"}
+  ],
+  "build": "202511020200",
+  "url": "https://github.com/yukazai/-pt-gflv",
+  "modules": [
+    {
+      "id": "among_us_tracker",
+      "name": "Among Us Tracker 🛡️",
+      "description": "Tracks players and allows marking suspected impostors in VRChat instances.",
+      "authors": [{"name": "usernamethatrun","userId": "usr_xxxxxxxx","description": "Plugin author"}],
+      "build": "1",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/among_us_tracker.js",
+      "tags": ["Monitor","AmongUs","Utility"],
+      "enabled": true  
+    {
       "id": "plugin_05",
       "name": "Plugin 05",
       "description": "Plugin 05 skeleton plugin",
