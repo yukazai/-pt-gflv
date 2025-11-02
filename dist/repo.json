@@ -1,6 +1,6 @@
 {
   "name": "Yukazai Plugin Repo",
-  "description": "Custom plugin repository for VRCX by usernamethatrun",
+  "description": "Custom plugin repo for VRCX by usernamethatrun",
   "authors": [
     {
       "name": "usernamethatrun",
@@ -8,13 +8,13 @@
       "description": "Plugin author"
     }
   ],
-  "build": "202511020000", 
+  "build": "202511020001",
   "url": "https://github.com/yukazai/-pt-gflv",
   "modules": [
     {
       "id": "extended_user_info_plus",
       "name": "Extended User Info+",
-      "description": "Adds a 'More Info' button to the user search results, showing extra user data safely.",
+      "description": "Adds a 'More Info' button to user search results safely.",
       "authors": [
         {
           "name": "usernamethatrun",
@@ -23,7 +23,7 @@
         }
       ],
       "build": "1",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/refs/heads/main/dist/plugins/plugin_1%2B.js",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/extended_user_info_plus.js",
       "tags": ["Utility","Profile","Safe","UI"],
       "enabled": true
     }
