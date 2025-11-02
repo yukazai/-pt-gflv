@@ -9,7 +9,7 @@ class ExtendedUserInfoPlus extends CustomModule {
         });
         this.loaded = false;
         this.observer = null;
-        this.userLogs = {}; // simulated local log
+        this.userLogs = {};
     }
 
     async load() {
@@ -86,7 +86,6 @@ class ExtendedUserInfoPlus extends CustomModule {
         header.appendChild(close);
         modal.appendChild(header);
 
-        // Tabs
         const tabs = ["Basic Info", "Recent Instances", "World Info","Mutual Friends", "Notes", "Activity", "Developer", "Trust Tools", "Settings"];
         const tabContainer = document.createElement("div");
         tabContainer.style = "display:flex; gap:8px; margin-top:10px;";
