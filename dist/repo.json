@@ -1,20 +1,31 @@
 {
-  "repository": {
-    "name": "Yukazai Plugin Repo",
-    "author": "usernamethatrun",
-    "url": "https://github.com/yukazai/-pt-gflv",
-    "build": 2,
-    "lastUpdated": "2025-11-02"
-  },
+  "name": "Yukazai Plugin Repo",
+  "description": "Custom plugin repository for VRCX by usernamethatrun",
+  "authors": [
+    {
+      "name": "usernamethatrun",
+      "userId": "usr_xxxxxxxx",
+      "description": "Plugin author"
+    }
+  ],
+  "build": "202511020000", 
+  "url": "https://github.com/yukazai/-pt-gflv",
   "modules": [
     {
-      "name": "extended_user_info_plus",
-      "displayName": "Extended User Info+",
-      "description": "Adds a 'More Info' button to VRChat user search results showing safe, detailed user information.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1%2B.js?cachebust=1",
-      "version": 1,
-      "author": "usernamethatrun",
-      "tags": ["Utility", "Profile", "Safe", "UI"]
+      "id": "extended_user_info_plus",
+      "name": "Extended User Info+",
+      "description": "Adds a 'More Info' button to the user search results, showing extra user data safely.",
+      "authors": [
+        {
+          "name": "usernamethatrun",
+          "userId": "usr_xxxxxxxx",
+          "description": "Plugin author"
+        }
+      ],
+      "build": "1",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/refs/heads/main/dist/plugins/plugin_1%2B.js",
+      "tags": ["Utility","Profile","Safe","UI"],
+      "enabled": true
     }
   ]
 }
