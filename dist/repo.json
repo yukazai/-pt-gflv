@@ -1,60 +1,74 @@
 {
-  "name": "Among Us Tracker Repo",
-  "description": "VRCX plugin repo for Among Us-style monitoring modules",
+  "name": "VRCX Full Plugin Repo",
+  "description": "VRCX plugin repository with Among Us style plugins + Extended User Info (throttled & safe)",
   "authors": [
-    {"name": "usernamethatrun","userId":"usr_xxxxxxxx","description":"Plugin author"}
+    {
+      "name": "usernamethatrun",
+      "userId": "usr_xxxxxxxx",
+      "description": "Plugin author"
+    }
   ],
-  "build": "202511020300",
+  "build": "202511020500",
   "url": "https://github.com/yukazai/-pt-gflv",
   "modules": [
     {
       "id": "among_us_tracker",
-      "name": "Among Us Tracker 🛡️",
-      "description": "Tracks players and allows marking suspected impostors",
-      "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx","description":"Plugin author"}],
-      "build": "1",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/among_us_tracker.js",
-      "tags":["Monitor","AmongUs","Utility"],
-      "enabled": true
-    },
-    {
-      "id": "impostor_logger",
-      "name": "Impostor Logger 📝",
-      "description": "Logs suspicious player actions for analysis",
+      "name": "Among Us Tracker",
+      "description": "Tracks players and marks suspected impostors safely",
       "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
       "build": "1",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/impostor_logger.js",
-      "tags":["Monitor","AmongUs","Logging"],
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/among_us_tracker.js",
+      "tags": ["Monitor","AmongUs","Utility"],
       "enabled": true
     },
     {
       "id": "vote_tracker",
-      "name": "Vote Tracker 🗳️",
-      "description": "Tracks voting events and counts for Among Us-style gameplay",
+      "name": "Vote Tracker",
+      "description": "Tracks votes safely with throttled updates",
       "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
       "build": "1",
       "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/vote_tracker.js",
-      "tags":["Monitor","AmongUs","Voting"],
+      "tags": ["Monitor","AmongUs","Voting"],
+      "enabled": true
+    },
+    {
+      "id": "impostor_logger",
+      "name": "Impostor Logger",
+      "description": "Logs suspicious actions safely with throttling",
+      "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
+      "build": "1",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/impostor_logger.js",
+      "tags": ["Monitor","AmongUs","Logging"],
       "enabled": true
     },
     {
       "id": "player_activity_monitor",
-      "name": "Player Activity Monitor 👀",
-      "description": "Tracks player movements and actions to detect suspicious behavior",
+      "name": "Player Activity Monitor",
+      "description": "Tracks player actions safely with throttling",
       "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
       "build": "1",
       "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/player_activity_monitor.js",
-      "tags":["Monitor","AmongUs","Activity"],
+      "tags": ["Monitor","AmongUs","Activity"],
       "enabled": true
     },
     {
       "id": "notification_manager",
-      "name": "Notification Manager 🔔",
-      "description": "Centralizes notifications for suspicious activity and votes",
+      "name": "Notification Manager",
+      "description": "Handles notifications safely with throttling",
       "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
       "build": "1",
       "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/notification_manager.js",
-      "tags":["Monitor","AmongUs","Notifications"],
+      "tags": ["Monitor","AmongUs","Notifications"],
+      "enabled": true
+    },
+    {
+      "id": "extended_user_info_plus",
+      "name": "Extended User Info+",
+      "description": "Adds a 'More Info' button safely with throttled API requests",
+      "authors": [{"name":"usernamethatrun","userId":"usr_xxxxxxxx"}],
+      "build": "1",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/extended_user_info_plus.js",
+      "tags": ["Utility","Profile","Safe","UI"],
       "enabled": true
     }
   ]
