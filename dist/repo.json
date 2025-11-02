@@ -1,6 +1,6 @@
 {
   "name": "Yukazai Plugin Repo",
-  "description": "Custom plugin repo for VRCX by usernamethatrun",
+  "description": "Custom plugin repository for VRCX by usernamethatrun",
   "authors": [
     {
       "name": "usernamethatrun",
@@ -8,7 +8,7 @@
       "description": "Plugin author"
     }
   ],
-  "build": "202511020001",
+  "build": "202511020002",
   "url": "https://github.com/yukazai/-pt-gflv",
   "modules": [
     {
