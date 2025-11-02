@@ -11,7 +11,7 @@
       "name": "extended_user_info_plus",
       "displayName": "Extended User Info+",
       "description": "Adds a 'More Info' button to VRChat user search results showing safe, detailed user information.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1+.js",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1%2B.js?cachebust=1",
       "version": 1,
       "author": "usernamethatrun",
       "tags": ["Utility", "Profile", "Safe", "UI"]
