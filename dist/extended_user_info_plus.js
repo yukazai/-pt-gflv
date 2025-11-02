@@ -1,15 +1,21 @@
-// ExtendedUserInfoPlus plugin for VRCX
+// ExtendedUserInfoPlus plugin for VRCX (unminified)
 class ExtendedUserInfoPlus extends CustomModule {
     constructor() {
         super({
             name: "extended_user_info_plus",
             description: "Adds a 'More Info' button to the user search results, showing extra user data safely.",
-            authors: [{ name: "usernamethatrun", userId: "usr_xxxxxxxx" }],
+            authors: [
+                {
+                    name: "usernamethatrun",
+                    userId: "usr_xxxxxxxx"
+                }
+            ],
             tags: ["Utility", "Profile", "Safe", "UI"]
         });
+
         this.loaded = false;
         this.observer = null;
-        this.userLogs = {};
+        this.userLogs = {}; // simulated local log
     }
 
     async load() {
@@ -29,6 +35,7 @@ class ExtendedUserInfoPlus extends CustomModule {
         const cards = document.querySelectorAll(".vrcx-user-card");
         for (const card of cards) {
             if (card.querySelector(".ext-info-btn")) continue;
+
             const btn = document.createElement("button");
             btn.innerText = "More Info";
             btn.classList.add("ext-info-btn");
@@ -57,6 +64,7 @@ class ExtendedUserInfoPlus extends CustomModule {
     openUserPanel(user) {
         const existing = document.getElementById("ext-user-modal");
         if (existing) existing.remove();
+
         const modal = document.createElement("div");
         modal.id = "ext-user-modal";
         modal.style = `
@@ -74,6 +82,7 @@ class ExtendedUserInfoPlus extends CustomModule {
             box-shadow: 0 0 10px rgba(0,0,0,0.7);
         `;
 
+        // Header
         const header = document.createElement("div");
         header.style = "display:flex; justify-content:space-between; align-items:center;";
         const title = document.createElement("h2");
@@ -86,9 +95,11 @@ class ExtendedUserInfoPlus extends CustomModule {
         header.appendChild(close);
         modal.appendChild(header);
 
+        // Tabs
         const tabs = ["Basic Info", "Recent Instances", "World Info","Mutual Friends", "Notes", "Activity", "Developer", "Trust Tools", "Settings"];
         const tabContainer = document.createElement("div");
         tabContainer.style = "display:flex; gap:8px; margin-top:10px;";
+
         const content = document.createElement("div");
         content.id = "ext-user-content";
         content.style = `margin-top: 10px;overflow-y: auto;height: 80%;background: #2a2a2a;padding: 10px;border-radius: 8px;`;
@@ -110,6 +121,7 @@ class ExtendedUserInfoPlus extends CustomModule {
 
     loadTab(tab, user, content) {
         content.innerHTML = "";
+
         if (tab === "Basic Info") {
             content.innerHTML = `
                 <h3>Basic Information</h3>
@@ -119,45 +131,59 @@ class ExtendedUserInfoPlus extends CustomModule {
                 <p><b>Bio:</b> ${user.bio}</p>
             `;
         }
+
         if (tab === "Recent Instances") {
-            const recent = this.userLogs[user.id] || [{ world: "The Great Pug", date: "2025-10-12" }, { world: "Midnight Rooftop", date: "2025-11-01" }];
+            const recent = this.userLogs[user.id] || [
+                { world: "The Great Pug", date: "2025-10-12" },
+                { world: "Midnight Rooftop", date: "2025-11-01" }
+            ];
             content.innerHTML = `<h3>Recent Instances</h3>`;
             recent.forEach(r => {
-                const item = document.createElement("p");
-                item.innerText = `${r.world} — ${r.date}`;
-                content.appendChild(item);
+                const p = document.createElement("p");
+                p.innerText = `${r.world} — ${r.date}`;
+                content.appendChild(p);
             });
         }
+
         if (tab === "World Info") {
             content.innerHTML = `<h3>Last Known World</h3><p>${user.name} was last seen in <b>The Black Cat</b>.</p><p>World ID: wrld_abc123</p>`;
         }
+
         if (tab === "Mutual Friends") {
             content.innerHTML = `<h3>Mutual Friends</h3><ul><li>Friend_A</li><li>Friend_B</li><li>Friend_C</li></ul>`;
         }
+
         if (tab === "Notes") {
-            const text = document.createElement("textarea");
-            text.style = "width:100%;height:200px;background:#333;color:#fff;border:none;border-radius:6px;padding:8px;";
-            text.placeholder = "Add personal notes about this user...";
-            const save = document.createElement("button");
-            save.innerText = "Save Note";
-            save.style = "margin-top:10px;background:#444;color:#fff;border:none;padding:5px 10px;border-radius:5px;";
-            save.onclick = () => alert("Note saved locally!");
-            content.appendChild(text);
-            content.appendChild(save);
+            const textarea = document.createElement("textarea");
+            textarea.style = "width:100%;height:200px;background:#333;color:#fff;border:none;border-radius:6px;padding:8px;";
+            textarea.placeholder = "Add personal notes about this user...";
+            const saveBtn = document.createElement("button");
+            saveBtn.innerText = "Save Note";
+            saveBtn.style = "margin-top:10px;background:#444;color:#fff;border:none;padding:5px 10px;border-radius:5px;";
+            saveBtn.onclick = () => alert("Note saved locally!");
+            content.appendChild(textarea);
+            content.appendChild(saveBtn);
         }
+
         if (tab === "Activity") {
-            content.innerHTML = `<h3>Activity Summary</h3>
-                <p>Times seen: ${Math.floor(Math.random() * 50)}</p>
-                <p>Messages exchanged: ${Math.floor(Math.random() * 20)}</p>
-                <p>Instances joined together: ${Math.floor(Math.random() * 10)}</p>`;
+            content.innerHTML = `
+                <h3>Activity Summary</h3>
+                <p>Times seen: ${Math.floor(Math.random()*50)}</p>
+                <p>Messages exchanged: ${Math.floor(Math.random()*20)}</p>
+                <p>Instances joined together: ${Math.floor(Math.random()*10)}</p>
+            `;
         }
+
         if (tab === "Developer") {
-            content.innerHTML = `<h3>Developer Info (Public)</h3>
+            content.innerHTML = `
+                <h3>Developer Info (Public)</h3>
                 <p>User ID: ${user.id}</p>
                 <p>Joined VRChat: 2021-06-18</p>
                 <p>Last Login: 2025-10-31</p>
-                <p>Tags: ["system_trust_legendary", "early_adopter"]</p>`;
+                <p>Tags: ["system_trust_legendary", "early_adopter"]</p>
+            `;
         }
+
         if (tab === "Trust Tools") {
             const btns = [
                 { name: "Block User", color: "#a33" },
@@ -166,18 +192,21 @@ class ExtendedUserInfoPlus extends CustomModule {
             ];
             content.innerHTML = `<h3>Trust & Block Tools</h3>`;
             btns.forEach(b => {
-                const button = document.createElement("button");
-                button.innerText = b.name;
-                button.style = `background:${b.color};color:#fff;border:none;padding:5px 10px;margin:5px;border-radius:5px;cursor:pointer;`;
-                button.onclick = () => alert(`${b.name} executed (local action)`);
-                content.appendChild(button);
+                const btn = document.createElement("button");
+                btn.innerText = b.name;
+                btn.style = `background:${b.color};color:#fff;border:none;padding:5px 10px;margin:5px;border-radius:5px;cursor:pointer;`;
+                btn.onclick = () => alert(`${b.name} executed (local action)`);
+                content.appendChild(btn);
             });
         }
+
         if (tab === "Settings") {
-            content.innerHTML = `<h3>Plugin Settings</h3>
+            content.innerHTML = `
+                <h3>Plugin Settings</h3>
                 <label><input type="checkbox" checked> Enable Activity Analytics</label><br>
                 <label><input type="checkbox" checked> Enable Mutual Friends</label><br>
-                <label><input type="checkbox"> Enable Developer Tab</label>`;
+                <label><input type="checkbox"> Enable Developer Tab</label>
+            `;
         }
     }
 }
