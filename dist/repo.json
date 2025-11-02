@@ -11,7 +11,7 @@
       "name": "auto_updater",
       "displayName": "Auto Updater",
       "description": "Checks and updates Yukazai's custom VRCX plugin repository automatically.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/auto_updater.js",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1.js",
       "version": 1,
       "author": "usernamethatrun",
       "tags": ["Updater", "Utility"]
@@ -20,7 +20,7 @@
       "name": "extended_user_info_plus",
       "displayName": "Extended User Info+",
       "description": "Adds a 'More Info' button to VRChat user search results showing safe, detailed user information.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/extended_user_info_plus.js",
+      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1+.js",
       "version": 1,
       "author": "usernamethatrun",
       "tags": ["Utility", "Profile", "Safe", "UI"]
