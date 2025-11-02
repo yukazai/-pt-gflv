@@ -7,6 +7,8 @@ class AmongUsTrackerPlugin extends CustomModule {
       tags:["Monitor","AmongUs","Utility"]
     });
     this.playerLogs = {};
+    this.queue = [];
+    this.isProcessing = false;
   }
 
   async load() {
@@ -27,6 +29,7 @@ class AmongUsTrackerPlugin extends CustomModule {
       const userId = card.querySelector(".user-id")?.innerText;
       const userName = card.querySelector(".user-name")?.innerText;
       if (!userId || card.querySelector(".au-btn")) return;
+
       if (!this.playerLogs[userId]) this.playerLogs[userId] = {name:userName,suspicious:false};
 
       const btn = document.createElement("button");
