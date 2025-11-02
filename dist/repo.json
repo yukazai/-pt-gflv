@@ -8,15 +8,6 @@
   },
   "modules": [
     {
-      "name": "auto_updater",
-      "displayName": "Auto Updater",
-      "description": "Checks and updates Yukazai's custom VRCX plugin repository automatically.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/plugin_1.js",
-      "version": 1,
-      "author": "usernamethatrun",
-      "tags": ["Updater", "Utility"]
-    },
-    {
       "name": "extended_user_info_plus",
       "displayName": "Extended User Info+",
       "description": "Adds a 'More Info' button to VRChat user search results showing safe, detailed user information.",
@@ -25,14 +16,6 @@
       "author": "usernamethatrun",
       "tags": ["Utility", "Profile", "Safe", "UI"]
     },
-    {
-      "name": "custom_emoji_plugin",
-      "displayName": "Custom Emoji Plugin",
-      "description": "Lets VRChat+ users add and manage custom emojis beyond the normal limit.",
-      "url": "https://raw.githubusercontent.com/yukazai/-pt-gflv/main/dist/plugins/custom_emoji_plugin.js",
-      "version": 1,
-      "author": "usernamethatrun",
-      "tags": ["Emoji", "Customization", "VRChatPlus"]
     }
   ]
 }
