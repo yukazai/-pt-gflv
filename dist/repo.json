@@ -8,7 +8,7 @@
       "description": "Plugin author"
     }
   ],
-  "build": "202511020002",
+  "build": "202511020003",
   "url": "https://github.com/yukazai/-pt-gflv",
   "modules": [
     {
